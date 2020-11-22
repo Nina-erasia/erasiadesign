@@ -1,0 +1,32 @@
+/*******************************************/
+/*                 CHATBOX                 */
+/*******************************************/
+
+
+/***** TABLE *****/
+table#chatbox_table {
+    position: fixed;
+    bottom: 50px;
+    left: 0px;
+    z-index: 99999;
+    border-spacing: 0;
+    background-color: none;
+    
+    td#chatbox_box {
+        border: 2px solid;
+        iframe#chatboxpop {
+            width: 800px;
+            height: 400px;
+            display: none;
+        }
+    }
+    td#chatbox_button {
+        vertical-align: bottom;
+        cursor: pointer;
+        height: 100px;
+        width: 30px;
+        
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+    }
+}

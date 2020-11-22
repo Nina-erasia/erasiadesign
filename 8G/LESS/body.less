@@ -1,0 +1,63 @@
+/*******************************************/
+/*                  BODY                   */
+/*******************************************/
+
+/* Body */
+body {
+    background-image: @body-background-image;
+	background-attachment: @body-background-attachment;
+	background-position: @body-background-position;
+	background-size: @body-background-size;
+    padding-top: @body-padding-top;
+    padding-bottom: @body-padding-bottom;
+
+    font-family: @normal-font-family;
+    font-size: @base-font-size;
+	line-height: @normal-line-height;
+    color: @normal-font-color;
+}
+
+/* Wrap */
+#wrap {
+	background-color: @wrap-background-color;
+	
+    border-top: @wrap-border-top;
+    border-right: @wrap-border-right;
+    border-left: @wrap-border-left;
+    border-bottom: @wrap-border-bottom;	
+	
+    padding-top: @wrap-padding-top;
+    padding-bottom: @wrap-padding-bottom;
+    
+    font-family: @normal-font-family;
+    font-size: @normal-font-size;
+    color: @wrap-font-color;
+}
+
+#simple-wrap {
+    background-color: @wrap-background-color;
+    border: @wrap-border-right;
+    .border-radius(@panel-border-radius);
+}
+
+/* Content */
+.content {
+    font-family: @normal-font-family;
+    font-size: @normal-font-size;
+    // color: @normal-font-color;
+}
+
+/* Panel */
+.panel {
+	background-color: @panel-background-color;
+	
+    border: @panel-border;
+    .border-radius(@panel-border-radius);
+
+    font-family: @normal-font-family;
+    font-size: @normal-font-size;
+    color: @panel-font-color;
+}
+
+/* Footer */
+#page-footer p.copyright { margin-bottom: 0px; }

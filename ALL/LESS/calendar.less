@@ -1,0 +1,83 @@
+/**************************************************/
+/*                   CALENDAR                     */
+/**************************************************/
+
+/* Separator */
+#calendar .separator {
+    width: 100%;
+    border: 0px;
+}
+
+/* Pannel search */
+#calendar .intro dl {
+	dt, dd {
+		display: inline-block;
+	}
+	dt { width: 75px; }
+}
+#calendar .intro .years ul, #calendar .intro .months ul {
+    padding: 0px;
+    margin: 0px;
+    li {
+        display: inline;
+        line-height: 2.2em;
+        list-style-type: none;
+        padding-right: 10px;
+    }
+}
+#prev { float: left; }
+#next { float: right; }
+
+/* Tableau du calendrier */
+#calendar .month {
+	display: none;
+	padding: 0px 1px;
+}
+#calendar .month table {
+    margin: 15px auto 6px;
+    width: 100%;
+    border-collapse: collapse;
+    
+    thead tr {
+        th { padding: 5px 1px; }
+    }
+    tbody tr {
+        td {
+            height: 150px;
+            overflow: auto;
+            width: 14.3%;
+            vertical-align: top;
+            padding: 3px;
+            div.day { margin-bottom: 3px;}
+        }
+        td.preambule {
+            border-top: 0px;
+            border-left: 0px;
+        }
+        td.end {
+            border-bottom: 0px;
+            border-right: 0px;
+        }
+    }
+}
+
+#calendar .events {
+    padding: 0px;
+    margin: 0px;
+}
+#calendar .events li {
+    list-style-type: none;
+    .desc {
+        position: absolute;
+        text-align: justify;
+        z-index: 40;
+        display: none;
+    }
+    .desc:before {
+    	border: solid transparent;
+    	content: " ";
+    	position: absolute;
+    	height: 0;
+        width: 0;
+    }
+}

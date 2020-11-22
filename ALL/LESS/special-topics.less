@@ -1,0 +1,257 @@
+/**************************************************/
+/*                 SPECIAL TOPICS                 */
+/**************************************************/
+
+
+/***** FICHE PAYS *****/
+.fiche-pays {
+    text-align: justify;
+    
+    .slogan { text-align: center; }
+    .slogan:before { content: "« "; }
+    .slogan:after { content: " »"; }
+    
+    h1, h2 { text-align: center; }
+    
+    h1 { padding-top: 14px; }
+    h2 { padding-top: 12px; }
+    h3 { padding-top: 2px; }
+    
+    dl {
+        dd { font-weight: bold; }
+        
+        dt {
+            margin-top: 3px;
+            margin-left: 20px;
+            padding-left: 5px;
+        }
+    }
+}
+
+
+/***** RULES *****/
+div.rules {
+    text-align: justify;
+
+    h1, h2, h3 {
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+    h1 {
+        text-align: center;
+        padding: 10px;
+    }
+    h2 { padding: 5px 10px; }
+    
+	ul, ol { margin-bottom: 0px; }
+
+    p {
+        font-size: inherit;
+        margin: 0px;
+    }
+}
+
+
+/***** CONTEXT *****/
+.context {
+    text-align: justify;
+    
+    h1, h2, h3 {
+        border: 0px !important;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    h1 { padding: 10px; }
+
+	.slogan { border-bottom: 0px !important; }
+    
+    .images {
+        text-align: center;
+        img.principale {
+            width: 60%;
+            background-color: gray;
+        }
+    }
+}
+
+
+/***** EVENT *****/
+.event {
+    text-align: justify;
+
+	/* Titles */
+    h1, h2 {
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+    }  
+    h1 { padding: 10px; }
+    
+	/* Elements */
+    p {
+        text-align: justify;
+        font-size: 1em;
+    }
+    
+    .images {
+        text-align: center;
+        img.principale {
+            margin-top: 3px;
+            width: 80%;
+            background-color: gray;
+        }
+        embed.principale { margin-top: 10px; }
+    }
+}
+
+
+/***** PRESENTATION DES LIEUX *****/
+.pres-lieux {
+    text-align: center;
+
+	/* Titles */
+    h1, h2 {
+        border: 0px !important;
+        margin: 0px;
+        padding: 0px;
+    }  
+    h1 { padding: 10px; }
+    
+	/* Elements */
+    p {
+        text-align: justify;
+        font-size: 1em;
+    }
+
+    img.principale {
+        margin-top: 3px;
+        width: 80%;
+        background-color: gray;
+    }
+    embed.principale { margin-top: 10px; }
+
+    div.poke {
+        display: inline-block;
+        width: 120px;
+        height: 140px;
+    }
+}
+
+
+/***** PENSION PNJ *****/
+[class^="pension-"] p, [class*=" pension-"] p { text-align: center; }
+[class^="pension-"] .bann-top, [class*=" pension-"] .bann-top { line-height: 16px; }
+[class^="pension-"] .bann-bottom, [class*=" pension-"] .bann-bottom { line-height: 12px; }
+[class^="pension-"] .bann-title, [class*=" pension-"] .bann-title {
+	line-height: 12px;
+    margin-top: -12px;
+    text-shadow: #000000 2px 2px 2px;
+}
+
+.pres-lieux.pension-arkan {
+    .bann-top { background-color: Dodgerblue; }
+    .bann-bottom { background-color: #B0C4DE; }
+    .bann-title { color: #E6E6FA; }
+}
+.pres-lieux.pension-seian {
+    .bann-top { background-color: Forestgreen; }
+    .bann-bottom { background-color: #3CB371; }
+    .bann-title { color: #F5FFFA; }
+}
+.pres-lieux.pension-omatsu {
+    .bann-top { background-color: Darkred; }
+    .bann-bottom { background-color: #F08080; }
+    .bann-title { color: #F5DEB3; }
+}
+.pres-lieux.pension-alfen {
+    .bann-top { background-color: Indigo; }
+    .bann-bottom { background-color: #DDA0DD; }
+    .bann-title { color: #FFFAF0; }
+}
+
+
+/***** POKE & ITEMS *****/
+div.pokes {
+    margin: 0px;
+    br { display: none; }
+    div.poke {
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        height: 200px;
+        width: 160px;    
+        div.sprite {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            height: 160px;
+            width: 160px;
+        }
+        div.text {
+            height: 40px;
+            br { display: inline; }
+        }
+    }
+}
+div.items {
+    margin: 0px;
+    br { display: none; }
+    div.item {
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        height: 100px;
+        width: 150px;      
+        div.sprite {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            height: 40px;
+            width: 150px;
+        }
+        div.text {
+            height: 60px;
+            br { display: inline; }
+        }
+    }   
+}
+
+
+/***** FICHE DE PRESENTATION *****/
+blockquote.fiche-pres {
+    padding-left: 25px;
+    div { margin: 0px ; }
+}
+.fiche-pres {
+	text-align: justify;
+
+    .title {
+        text-align: center;
+        padding: 10px;
+        padding-left: 0px;
+    }
+    .images {
+        text-align: center;
+        img.principale {
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border: 2px solid #000;
+            border-radius: 5px;
+            width: 60%;
+            background-color: gray;
+        }
+    }
+    
+    fieldset {
+        .border-radius(8px);
+        padding: 10px;
+        
+        dl.codebox.spoiler {
+            dt { width: 100% !important; }
+            dd { margin-left: 0px !important; }
+        }
+    }
+}

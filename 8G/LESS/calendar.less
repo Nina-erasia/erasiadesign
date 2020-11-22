@@ -1,0 +1,59 @@
+/**************************************************/
+/*                   CALENDAR                     */
+/**************************************************/
+
+/* Separator */
+#calendar .separator { border-top: 1px dashed @h2-panel-font-color; }
+
+/* Pannel search */
+#calendar .years ul, #calendar .months ul {    
+    .active {
+        font-weight: bold;
+        color: @calendar-selected-active;
+    }
+}
+
+/* Tableau du calendrier */
+#calendar .month table {
+    background-color: @panel-background-color;
+    
+    thead tr { background-color: @panel-background-color; }
+    
+    tbody {
+        border: @panel-border;
+        tr {
+            td {
+                border: @calendar-table-border;
+                background-color: @calendar-table-normal-day-background-color;
+                div.day { font-weight: bold; }
+            }
+            td:hover, td.today { background-color: @calendar-table-today-background-color; }
+            td.preambule, td.end { background-color: @calendar-table-preambule-background-color; }
+        }
+    }
+}
+
+#calendar .events li {
+    .title .title-orga { font-weight: bold; }
+    .desc {
+        margin-top: 10px;
+        margin-left: 5px;
+        padding: 8px;
+        width: 250px;
+        background-color: @calendar-event-desc-background-color;
+        border: @calendar-event-desc-border;
+        .border-radius(@calendar-event-desc-border-radius);
+    }
+    .desc:before {
+    	border-width: 8px;
+    	border-bottom-color: @panel-border-color;
+    	top: -17px;
+    	left: 7px;
+    }
+    .desc .name {
+        font-weight: bold;
+        .name-orga { color: red; }
+    }
+    .desc .location { font-size: 11px; }
+}
+#calendar .events li:before { content: "▸ "; }

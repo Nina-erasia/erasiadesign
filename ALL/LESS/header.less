@@ -1,0 +1,109 @@
+/*******************************************/
+/*                 HEADER                  */
+/*******************************************/
+
+/***** BUG IE *****/
+* html .headerbar { height: 1%; }
+*+ html .headerbar { min-height: 1px; }
+
+/***** HEADER *****/
+#page-header { margin: 0px 5px; }
+
+/***** LOGO *****/
+#page-header .headerbar {
+    margin-bottom: 4px;
+	padding: 0pt 5px;
+
+    #logo-desc {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        width: 100%;
+	        
+        a#logo {
+            max-width: 100%;
+            width: 900px;
+            display: block;
+            margin: 5px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        p {
+	        margin: 0px;
+	        padding: 0px;
+	    }
+    }       
+
+    div#site-title, #site-title h1 { padding: 10px; }
+}
+    
+/***** NAVIGATION *****/
+
+/* Navlinks */
+* html .navbar { height: 1%; }
+* + html .navbar { min-height: 1px; }
+
+#page-header .navbar {
+	clear: both;
+    padding: 0px 10px;
+
+    ul.navlinks {
+        border : 0px;
+	    text-align: center;
+    }
+}
+
+.navbar:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+
+/* Search box */
+#search-box { display: none; }
+
+/* Menu Recherche */
+#search_menu {
+    input.button1 { margin: 0px 3px; }
+    a img {
+	    background: url("http://illiweb.com/fa/sprite_prosilver_menu.png") no-repeat top left;
+	    background-position: -651px 0;
+	    height: 14px;
+	    width: 16px;
+	    margin: 0px !important;
+	    padding-bottom: 5px;
+    }
+}
+
+/***** TOOLBAR *****/
+.toolbar-nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 76%;
+	min-width: 780px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	z-index: 50;
+	overflow: hidden;
+
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+	}
+	a {
+		padding: 0px 0.5em;
+	}
+}
+nav.toolbar-nav {
+	display: none;
+	position: fixed;
+}

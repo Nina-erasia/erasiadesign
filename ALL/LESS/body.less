@@ -1,0 +1,148 @@
+/*******************************************/
+/*                  BODY                   */
+/*******************************************/
+
+/* Html */
+* {
+	 margin: 0px;
+	 padding: 0px;
+}
+html {
+	font-size: 100%;
+	height: 100%;
+}
+* html {
+	scrollbar-face-color: #;
+	scrollbar-highlight-color: #;
+	scrollbar-shadow-color: #;
+	scrollbar-3dlight-color: #;
+	scrollbar-arrow-color: #;
+	scrollbar-track-color: #;
+	scrollbar-darkshadow-color: #;
+}
+*+ html {
+	scrollbar-face-color: #;
+	scrollbar-highlight-color: #;
+	scrollbar-shadow-color: #;
+	scrollbar-3dlight-color: #;
+	scrollbar-arrow-color: #;
+	scrollbar-track-color: #;
+	scrollbar-darkshadow-color: #;
+}
+
+/* Body */
+body {
+	background-color: #ffffff;
+	height: auto;
+}
+
+/* Wrap */
+#wrap {
+	width: 75%;
+	margin: 0px auto;
+	min-width: 768px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#simple-wrap { padding: 6px 10px; }
+
+/* Conteneur IE */
+* html .conteneur_minwidth_IE { padding-left: 900px; }
+* html .conteneur_container_IE {
+    margin-left: -900px;
+	position: relative;
+}
+* html .conteneur_minwidth_IE,
+* html .conteneur_container_IE,
+* html .conteneur_layout_IE {
+	height: 1px;
+}
+
+/* Content-Container */
+*+ html #content-container div#main { margin-left: 0px; }
+
+* html #content-container {
+    #main-content {
+    	overflow: visible;
+    	margin-right: 0px;
+	}
+	div#main {
+        margin-right: -99%;
+    	width: 100%;
+    	float: left;
+	}
+}
+
+#content-container {
+    div#container {
+    	width: 100%;
+    	float: left;
+    	margin-right: -0px;
+    }
+    div#content { margin-right: 0px; }
+    div#main {
+    	margin-bottom: 1em;
+    	overflow: hidden;
+    }
+    div#left {
+    	width: 0px;
+    	float: left;
+    	margin-right: 0px;
+    	overflow: hidden;
+	}
+	div#right {
+    	width: 0px;
+    	float: right;
+    	overflow: hidden;
+	}
+}
+
+/* Page-body */
+#page-body {
+	margin: 4px 0;
+	width: 100%;
+    p.page-bottom { margin: 0; 	}
+}
+
+/* Content */
+.content {
+	min-height: 3em;
+	overflow: hidden;
+}
+
+
+/* Panel */
+* html .panel { height: 1%; }
+*+ html .panel { min-height: 1px; }
+
+.panel {
+	margin-bottom: 4px;
+	padding: 0px 10px;
+}
+.panel:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+
+.panel-left, .panel-right { width: 47%; }
+.panel-left  { float: left;  }
+.panel-right { float: right; }
+
+/* Footer */
+#page-footer {
+    display: block !important;
+    .navbar {
+        background-color: inherit;
+        clear: both;
+        padding: 0px 10px;
+    }
+    .copyright {
+    	padding: 5px;
+    	text-align: center;
+    	height: 40px;
+    }
+}

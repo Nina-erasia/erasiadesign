@@ -1,0 +1,118 @@
+/*******************************************/
+/*              TEXT / TITLES              */
+/*******************************************/
+
+
+/***** TEXT *****/
+
+/* Links */
+a, a:link, a:active, a:visited { color: @link-color; }
+a:hover { color: @link-color-hover; }
+
+/* Spans */
+span.coloradmin { color: #724249 !important; }
+
+span.topictitle-info {
+    font-family: @normal-font-family;
+    font-size: @base-font-size;
+    color: @normal-font-color;
+}
+
+.info {
+	font-size: @very-small-font-size;
+	font-style: italic;
+}
+
+/* Paragraphes */
+p, p.author, p.nomargin, #cp-main .panel p, 
+#cp-main .postbody p, .content p, .panel p {
+    font-family: @normal-font-family;
+    font-size: @normal-font-size;
+    line-height: @normal-line-height;
+}
+
+.overview {
+    background-color: @panel-background-color;
+    border: @panel-border !important;
+    .border-radius(@panel-border-radius);
+}
+
+.helpline, .info { font-size: @very-small-font-size; }
+.select p, .gensmall { font-size: @small-font-size; }
+
+/* Lettrines */
+.lettrines p:first-letter {
+  font-family: @title-font-family;
+  color: @title-font-color;
+  font-size: @very-large-font-size;
+}
+
+/* Couleurs des pays */
+.terros, .terros blockquote { color: @terros-color !important; }
+.mizuhan, .mizuhan blockquote { color: @mizuhan-color !important; }
+.flamen, .flamen blockquote { color: @flamen-color !important; }
+.nalcia, .nalcia blockquote { color: @nalcia-color !important; }
+.abyan, .abyan blockquote { color: @abyan-color !important; }
+.torcan, .torcan blockquote { color: @torcan-color !important; }
+.dyrinn, .dyrinn blockquote { color: @dyrinn-color !important; }
+.aliphyr, .aliphyr blockquote { color: @aliphyr-color !important; }
+.erasia, .erasia blockquote {}
+.tenkei, .tenkei blockquote {}
+.tous, .tous blockquote {}
+.pnj-color { color: @pnj-color !important; }
+.champion-color { color: @champion-color !important; }
+
+
+/***** TITLES *****/
+
+/* H1 */
+h1 {
+    font-variant: @h1-font-variant;
+    text-transform: @h1-text-transform;
+    font-weight: @h1-font-weight;
+	font-family: @h1-font-family;
+	color: @h1-font-color;
+	font-size: @h1-font-size;
+}
+
+.panel h1 {
+	font-size: @h1-panel-font-size;
+	border-bottom: @h1-panel-border-bottom;
+}
+
+/* H2 */
+h2 {
+    font-variant: @h2-font-variant;
+    text-transform: @h2-text-transform;
+    font-weight: @h2-font-weight;
+	font-family: @h2-font-family;
+	color: @h2-font-color;
+	font-size: @h2-font-size;	
+}
+
+.content h2, .panel h2,
+.content h2.h3, .panel h2.h3 {
+	color: @h2-panel-font-color;
+	font-size: @h2-panel-font-size;
+	border-bottom: @h2-panel-border-bottom;
+}
+
+/* H3 */
+h3, .h3, h2.h3 {
+    font-variant: @h3-font-variant;
+    text-transform: @h3-text-transform;
+    font-weight: @h3-font-weight;
+	font-family: @h3-font-family;
+	color: @h3-font-color;
+	font-size: @h3-font-size;	
+	
+	border-bottom: @h3-border-bottom;
+	strong { font-weight: @h3-font-weight; }
+}
+
+.panel h3, .panel .h3,
+.post h3, .post .h3, .post h2.h3,
+.postbody h3, .postbody .h3 {
+    color: @h3-panel-font-color;
+    border-bottom: @h3-panel-border-bottom;
+}

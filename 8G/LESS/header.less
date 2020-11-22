@@ -1,0 +1,79 @@
+/*******************************************/
+/*                 HEADER                  */
+/*******************************************/
+
+/***** HEADER *****/
+#page-header {
+    background-color: @header-background-color;
+    border-top: @header-border-top;
+    border-bottom: @header-border-bottom;
+    border-right: @header-border-right;
+    border-left: @header-border-left;
+	.border-radius(@header-border-radius);
+}
+
+
+/***** LOGO *****/
+#page-header .headerbar {
+	background-color: @headerbar-background-color;
+	border: @headerbar-border;
+	.border-radius(@headerbar-border-radius);
+        
+	#logo-desc {
+		a#logo {
+			background-image: @headerbar-logo-background-image;
+			.border-radius(@headerbar-logo-border-radius);
+			height: @headerbar-logo-height;
+		}
+		p { color: @normal-font-color; }
+    }
+
+    div#site-title, #site-title h1 {
+		font-family: @title-font-family;
+		color: @normal-font-color;
+		font-size: @very-large-font-size;
+		font-weight: bold;
+    }
+}
+
+
+/***** NAVIGATION *****/ 
+#page-header .navbar {
+	background-color: @navbar-background-color;
+    border: @navbar-border;
+	.border-radius(@navbar-border-radius);
+
+    ul.navlinks img {
+		margin-right: @navbar-img-margin-right;
+		margin-left: @navbar-img-margin-left;
+		margin-top: @navbar-img-margin-top;
+		margin-bottom: @navbar-img-margin-bottom;
+		vertical-align: @navbar-img-vertical-align;
+    }
+    
+    ul.navlinks a:before { content: @navbar-img-between-content; }
+    ul.navlinks li:first-child a:before { content: ""; }
+}
+
+/***** NAVBAR *****/
+.toolbar-nav {
+	background-color: @toolbar-background-color;
+	height: @toolbar-height;
+	li {
+		line-height: @toolbar-height;
+	}
+	a { color: @toolbar-font-color; }
+	a:hover { color: @toolbar-font-color-hover; }
+	.box-shadow( @toolbar-box-shadow );
+}
+
+/***** MENU RECHERCHE *****/
+#search_menu {
+	background-color: @panel-background-color;
+	border: @panel-border;
+    .border-radius(@panel-border-radius);
+	color: @normal-font-color;
+	
+	.title-overview { font-weight: bold; }
+    p { .border-radius(@panel-border-radius); }
+}

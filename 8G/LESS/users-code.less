@@ -1,0 +1,339 @@
+/*******************************************/
+/*              CODES PRIVES               */
+/*******************************************/
+
+/***** ASAKA *****/
+div.RS-cadre {
+    .border-radius(5px);
+    border: @table-border;
+    background-color: @td-background-color-2;
+    padding: 10px;
+
+    div.msg-titre4 {
+        font-family: @title-font-family;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    div.RS-case {
+        .border-radius(3px);
+        border: @td-border-sides;
+        border-width: 2px;
+        background-color: @td-background-color-1;
+        padding: 4px;
+
+        div.msg-titre3 {
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            font-family: @title-font-family;
+        }
+        img {
+            margin: 5px;
+            display: inline-block;
+        }
+        div.RS-case-txt {
+            text-align: justify;
+            height: 155px;
+            overflow: auto;
+        }
+    }
+}
+
+/**** KAE / JIYUU / LEHNA / SACHA / ENIGMA *****/
+.kae, .jiyuu, .lehna, .sacha {
+    text-align: justify;
+
+    .title {
+        text-align: center;
+        margin: 5px 0px;
+        display: block;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .sub-title {
+        text-align: left;
+        font-weight: bold;
+        display: block;
+        font-size: 1.05em;
+    }
+    .image {
+        max-width: 80%;
+        // border: 1px solid black;
+    }
+    .detail { color: #999; }
+
+    /* Fiche de présentation */
+    .fiche-presentation {
+        b { display: inline-block; }
+        fieldset {
+            font-size: 1em;
+            text-align: justify;
+            padding: 10px;
+            .border-radius(8px);
+            legend {
+                font-style: italic;
+                font-weight: bold;
+                display: block;
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    /* Archivage */
+    .archivage {
+        em { font-style: normal; }
+    }
+
+    /* RP */
+    .hrp {
+        font-size: @small-font-size;
+        opacity: 0.7;
+    }
+    .hrp:before { content: "["; }
+    .hrp:after { content: "]"; }
+
+    .talk:before, [class^="pnj-"]:before, [class*=" pnj-"]:before { content: "« "; }
+    .talk:after, [class^="pnj-"]:after, [class*=" pnj-"]:after { content: " »"; }
+
+    .pnj-1 { color: olive; }
+    .pnj-2 { color: green; }
+}
+
+/* Kaé */
+@kae-color: Brown;//#835C3B;//#E2A76F;
+.kae {
+    /* Variables */
+    //@kae-color: Brown;
+    @kae-first-letter-font-family: "Lucida Handwriting";
+    @kae-title-font-family: inherit;
+    @kae-normal-font-family: inherit;
+
+    /* Titre */
+    .title { color: @kae-color; }
+
+    /* Lettrines */
+    .title:first-letter, .sub-title:first-letter, .first-letter {
+        font-family: @kae-first-letter-font-family;
+    }
+
+    /* Fiche de présentation */
+    .fiche-presentation {
+        b:first-letter { font-family: @kae-first-letter-font-family; }
+        fieldset {
+            border: 1px solid @kae-color;
+            legend { color: @kae-color; }
+            legend:first-letter { font-family: @kae-first-letter-font-family; }
+            b:first-letter { font-family: @kae-first-letter-font-family; }
+        }
+    }
+
+    /* Archivage */
+    .archivage {
+        em { color: @kae-color; }
+    }
+
+    /* Parole */
+    .talk { color: @kae-color; }
+    .pnj-hiashi { color: green; }
+
+    /* Berserk */
+    [class^="berserk-"]:before, [class*=" berserk-"]:before { content: "« "; }
+    [class^="berserk-"]:after, [class*=" berserk-"]:after { content: " »"; }
+    [class^="berserk-"], [class*=" berserk-"] {
+        font-variant: small-caps;
+        font-weight: bold;
+    }
+
+    .berserk-absol { color: Chocolat; }
+}
+.profile-rank .staff-kae { font-weight: bold; }
+
+/* Jiyuu */
+.jiyuu {
+    /* Variables */
+    @jiyuu-color: Plum;
+    @jiyuu-first-letter-font-family: "Lucida Calligraphy";
+
+    /* Titres */
+    .title { color: @jiyuu-color; }
+
+    /* Lettrines */
+    .title:first-letter, .sub-title:first-letter, .first-letter {
+        font-family: @jiyuu-first-letter-font-family;
+    }
+
+    /* Fiche de présentation */
+    .fiche-presentation {
+        b:first-letter { font-family: @jiyuu-first-letter-font-family; }
+        fieldset {
+            border: 3px double @jiyuu-color;
+            legend { color: @jiyuu-color; }
+            legend:first-letter { font-family: @jiyuu-first-letter-font-family; }
+            b:first-letter { font-family: @jiyuu-first-letter-font-family; }
+        }
+    }
+
+    /* Archivage */
+    .archivage {
+        em { color: @jiyuu-color; }
+    }
+
+    /* Parole */
+    .talk { color: @jiyuu-color; }
+    .pnj-ishi { color: LightSkyBlue; }
+    .pnj-fiche {color: Orange; }
+}
+
+/* Lehna */
+.lehna {
+    /* Variables */
+    @lehna-color: CornFlowerBlue;
+    @lehna-first-letter-font-family: "Lucida Calligraphy";
+
+    /* Titre */
+    .title { color: @lehna-color; }
+
+    /* Lettrines */
+    .title:first-letter, .sub-title:first-letter, .first-letter {
+        font-family: @lehna-first-letter-font-family;
+    }
+
+    /* Fiche de présentation */
+    .fiche-presentation {
+        b:first-letter { font-family: @lehna-first-letter-font-family; }
+        fieldset {
+            border: 3px double @lehna-color;
+            legend { color: @lehna-color; }
+            legend:first-letter { font-family: @lehna-first-letter-font-family; }
+            b:first-letter { font-family: @lehna-first-letter-font-family; }
+        }
+    }
+
+    /* Archivage */
+    .archivage {
+        em { color: @lehna-color; }
+    }
+
+    /* Parole */
+    .talk { color: @lehna-color; }
+    .pnj-oyu { color: Blue; }
+    .pnj-cynthia { color: #C2DFFF; }
+    .pnj-cassiopee { color: IndianRed; }
+
+    /* Arène */
+    .arene {
+        .title { font-weight: normal; }
+        .title:first-letter { font-family: inherit; }
+        .title:before { content: "~ "; }
+        .title:after { content: " ~"; }
+
+        .sub-title {
+            color: @lehna-color;
+            font-weight: normal;
+            font-size: 1.2em;
+        }
+        .sub-title-2 {
+            font-weight: bold;
+            display: inline-block;
+        }
+        .sub-title-2:first-letter { font-family: @lehna-first-letter-font-family; }
+
+        .image {
+            display: block;
+            margin: 5px auto;
+            text-align: center;
+            border: 2px solid black;
+            .border-radius(5px);
+        }
+    }
+
+    /* Pension */
+    .pension {
+        .title { font-weight: normal; }
+        .title:first-letter { font-family: inherit; }
+        .title:before { content: "~ "; }
+        .title:after { content: " ~"; }
+
+        .sub-title {
+            color: @lehna-color;
+            font-weight: normal;
+            font-size: 1.2em;
+        }
+
+        .sub-title-2 {
+            font-weight: bold;
+            display: inline-block;
+        }
+        .sub-title-2:first-letter { font-family: @lehna-first-letter-font-family; }
+    }
+}
+
+/* Sacha */
+.sacha {
+    /* Variables */
+    @sacha-color: FireBrick;
+    @sacha-first-letter-font-family: "Lucida Handwriting";
+
+    /* Titre */
+    .title { color: @sacha-color; }
+
+    /* Lettrines */
+    .title:first-letter, .sub-title:first-letter, .first-letter {
+        font-family: @sacha-first-letter-font-family;
+    }
+
+    /* Fiche de présentation */
+    .fiche-presentation {
+        b:first-letter { font-family: @sacha-first-letter-font-family; }
+        fieldset {
+            border: 1px solid @sacha-color;
+            legend { color: @sacha-color; }
+            legend:first-letter { font-family: @sacha-first-letter-font-family; }
+            b:first-letter { font-family: @sacha-first-letter-font-family; }
+        }
+    }
+
+    /* Archivage */
+    /* Archivage */
+    .archivage {
+        em { color: @sacha-color; }
+    }
+
+    /* Parole */
+    .talk { color: @sacha-color; }
+    .pnj-logan { color: Indigo; }
+    .pnj-may { color: Violet; }
+    .pnj-aren { color: DarkBlue; }
+}
+
+/* Enigma */
+.enigma { color: @kae-color; }
+
+/***** MIZUKI *****/
+.mizu-modo { color: HotPink; }
+
+/***** NINA *****/
+.nina-admin { color: darkseagreen; }
+.abby { color: #B8860B; }
+.peter { color: #8B0000; }
+.nina { color: #006400; }
+.molly { color: #CD5C5C; }
+.luciano { color: #5F9EA0; }
+.miku { color: RoyalBlue; }
+.tyrande { color: #CD853F; }
+
+/***** STAFF *****/
+.staff-kae { color: brown; }
+.staff-mizuki { color: #ff69b4; }
+.staff-nina { color: darkseagreen; }
+.staff-white { color: red; }
+.staff-yugo { color: lightsalmon; }
+.staff-hugo { color: #0eb0e0; }
+.staff-soriu { color: grey; }
+.staff-kajin { color: darkred; }
+.staff-edward { color: olive; }
+.staff-elvira { color: #6666cc; }
+.staff-lucy { color: mediumvioletred; }
+.staff-anthere { color: cornflowerblue; }
+.staff-andromede { color: lightslategray; }

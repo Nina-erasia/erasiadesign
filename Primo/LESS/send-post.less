@@ -1,0 +1,127 @@
+/*******************************************/
+/*                SEND POST                */
+/*******************************************/
+
+
+/***** PREVIEW *****/
+#preview, .post-preview {
+    background-color: @panel-background-color;
+    border: @panel-border;
+
+    .postbody {
+        font-size: @normal-font-size;
+        .content { font-size: @normal-font-size; }
+		.h3 {
+			font-weight: @h3-font-weight;
+			font-variant: @h3-font-variant;
+			font-size: @h3-font-size;
+		}
+    }
+}
+
+
+/***** MENU FIND USER *****/
+.jqmWindow { .border-radius(@panel-border-radius); }
+
+
+/***** POSTING BOX *****/
+#postingbox {
+	/* Smiley */
+	#smiley-box {
+		font-size: @very-small-font-size;
+	    div#smileyContainer iframe {	
+			border: @smiley-border;
+			.border-radius(@smiley-border-radius);
+			background-color: @smiley-background-color;
+	    }
+	}
+}
+
+
+/***** EDITOR ****/
+#textarea_content {
+
+	.sceditor-container {
+		border: @editor-border !important;
+
+		/* En-tete */
+		.sceditor-toolbar {
+	        background: none repeat scroll 0% 0% padding-box @editor-toolbar-background-color !important;
+	        border-bottom: @editor-toolbar-border-bottom !important;
+
+	        .sceditor-group {
+	            background-color: @editor-toolbar-group-background-color !important;
+	            border-color: @editor-toolbar-group-border-color !important;
+	            box-shadow: @editor-toolbar-group-box-shadow !important;
+
+	            .sceditor-button:hover {
+	                background-color: @editor-toolbar-button-hover-color !important;
+	                border-color: @editor-toolbar-group-border-color !important;
+	                box-shadow: @editor-toolbar-group-box-shadow !important; 
+	            }
+	        }
+		}
+
+		/* Zone de texte */
+		textarea, iframe body {
+			font-family: @normal-font-family !important;
+			font-size: @normal-font-size !important;
+			color: @input-font-color !important;
+			background-color: @input-background-color !important;
+		}
+	}
+}
+
+/*.sceditor-container, .sceditor-container iframe, .sceditor-container textarea {
+  font-family: @normal-font-family !important;
+  font-size: @base-font-size;
+  color: black !important;
+}
+.sceditor-container { 
+    border: @editor-border !important;
+    iframe, textarea { font-size: @base-font-size !important; }
+}*/
+
+.sceditor-dropdown {
+	background: none repeat scroll 0% 0% padding-box @smiley-background-color !important;
+	border: @smiley-border !important;
+	border-radius: @smiley-border-radius !important;
+	color: @normal-font-color !important;
+
+	.button {
+		font-family: @normal-font-family !important;
+	    font-size: @small-font-size !important;
+	    line-height: normal-line-height !important;
+	    text-shadow: @button-text-shadow !important;
+	    box-shadow: @button-box-shadow !important;
+
+	    background-color: @button-normal-background-color !important;
+	    color: @button-normal-font-color !important;
+	    border-color: @button-normal-border-color !important;
+	}
+	
+	.button:hover {
+		background-color: @button-normal-hover-background-color !important;
+	    color: @button-normal-hover-font-color !important;
+	    border-color: @button-normal-hover-border-color !important;
+	}
+}
+
+
+/***** SMILEY IFRAME *****/
+#sce_smilies_body {
+    min-width: 1px !important;
+	background-color: transparent !important;
+    background-image: none !important;
+    select {
+        width: 98%;
+    }
+}
+
+
+/***** OLD EDITOR *****/
+.editor-message-box textarea {
+	font-family: @normal-font-family;
+	font-size: @normal-font-size;
+	color: @normal-font-color;
+}

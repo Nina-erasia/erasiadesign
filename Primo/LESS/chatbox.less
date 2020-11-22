@@ -1,0 +1,187 @@
+/*******************************************/
+/*                 CHATBOX                 */
+/*******************************************/
+
+/***** EXTERN PAGE *****/
+/* Needed in the CSS sheet in Couleurs -> Feuille de style CSS */
+
+/* Body */
+body.chatbox {
+	background-image: none;
+	width: 100%;
+	
+    background-color: @chatbox-background-color;
+    font-family: @normal-font-family;
+  	font-size: @base-font-size;
+	color: @normal-font-color;
+	line-height: @normal-line-height;
+	
+	a { text-decoration: none !important; }
+}
+
+/* Header */
+div#chatbox_header {
+	width: 100%;
+	height: 35px;
+	padding: 5px;
+  	display: inline-block;
+	.border-radius(0px);
+	
+    background-color: @chatbox-header-background-color;
+    font-family: @normal-font-family;
+	color: @chatbox-header-font-color;
+	
+	h2.chatbox-title, h2.chatbox-title a.chat-title {
+		display: inline-block;
+		padding: 5px;
+		text-decoration: none;
+		font-size: @chatbox-header-font-size;
+  	    color: @chatbox-header-font-color;
+	}	
+	h2.chatbox-title a.chat-title:hover {
+  	    text-decoration: none;
+  	    color: @chatbox-header-hover-font-color;
+    }
+
+	ul#chatbox_main_options {
+    	font-weight: normal;
+      	float: right;
+      	list-style: none;
+    	margin: 0.7em 0.5em 0.5em 0.5em;
+		font-size: @very-small-font-size;
+		
+		strong { font-weight: normal !important; }
+		li, li a { display: inline; }
+		
+		a { color: @chatbox-header-font-color; }
+		a:hover { color: @chatbox-header-hover-font-color !important; }
+	}
+}
+
+/* Member */
+#chatbox_members {
+    position: absolute;
+	top: 47px;
+	bottom: 40px;
+	width: 180px;
+	overflow: auto;
+	border-right: @chatbox-border;
+  	padding: 5px;
+	
+	.member-title {
+	    text-align: center;
+	    padding: 0.5em 0.25em;
+    	background-image: none;
+	    font-size: @large-font-size;
+  	    font-style: italic;
+	    color: @chatbox-title-member-color;
+    }
+    ul {
+	    list-style: none;
+	    margin: 0 0 0 1em;
+        li {
+            margin: 0.5em 0.5em 0.5em 0;
+            a { font-size: @normal-font-size; }
+        }
+    }
+}
+
+/* Box */
+#chatbox {
+    position: absolute;
+	top: 45px;
+	left: 191px;
+	right: 0;
+	bottom: 45px;
+	overflow: auto;
+  	padding: 5px;
+	margin-top: 4px;
+    
+	line-height: 10px;
+	font-size: @small-font-size;
+	
+	.user { font-weight: bold; }
+	
+	.chatbox_row_1, .chatbox_row_2, .chatbox_row_3 { padding: 4px; }
+	
+	p { 
+	    margin-bottom: 0px;
+	    font-size: @normal-font-size;
+	}	
+}
+
+/* Footer */
+#chatbox_footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	display: inline-block;
+	width: 100%;
+  	height: 35px !important;
+	padding: 5px 0px;
+	.border-radius(0px);
+	
+	background-color: @chatbox-header-background-color;
+	color: @chatbox-header-font-color;
+
+	form, #chatbox_messenger_form { height: 35px; }
+	
+	#help-button {
+		display: inline-block;
+		margin-top: 6px;
+	}
+
+	.right-box {
+	    display: inline-block;
+    	vertical-align: middle;
+		float: right;
+		margin-top: 6px;
+	}
+	.style-buttons { margin-top: -4px !important; }
+	
+	label { font-weight: bold; }
+	input#message {
+		margin: 3px 5px;
+		padding: 2px;
+		color: @input-font-color !important;
+	}
+}
+
+/* Form */
+#chatbox_messenger_form { vertical-align: middle; }
+#message, #submit_button {
+    margin-right: 10px;
+    height: 24px !important;
+}
+.fontbutton {
+    margin-right: 10px;
+    float: left;
+    min-height: 20px;
+}
+.fontbutton, #submit_button {
+    background-image: none !important;
+    
+    margin-bottom: 0px;
+    padding: 2px 6px;
+    vertical-align: middle;
+    cursor: pointer;
+    width: auto !important;
+    overflow: visible;
+    
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+
+/***** TABLE *****/
+table#chatbox_table {
+    td#chatbox_box {
+        border: @chatbox-border;
+        .border-radius(@chatbox-border-radius);
+    }
+    td#chatbox_button.closed { background-image: @chatbox-closed-background-image; }
+    td#chatbox_button.opened { background-image: @chatbox-opened-background-image; }
+}
+
+#chatbox_messenger_form .right-box.style-buttons .text-field { margin-top: 4px; }

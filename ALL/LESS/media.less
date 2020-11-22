@@ -1,0 +1,47 @@
+/*******************************************/
+/*                  MEDIA                  */
+/*******************************************/
+
+/***** PRINT *****/
+@media print {
+    /* Body */
+	* {
+    	background-image: none;
+    	background-color: #fff;
+    	color: #000;
+	}
+    body {
+        padding: 0;
+    	margin: 0;
+    	font-size: 10pt;
+	}
+    div#wrap {
+	    width: 85%;
+	    margin: 0;
+	    border: 0px;
+	}
+    span.corners-top, span.corners-bottom { display: none; }
+
+    /* Header & CB & Plus */
+    #page-header, #chatbox_table, #plus_menu {
+        display: none !important;
+        visibility: hidden ! important;
+    }
+
+    /* Posts */
+    div#page-body div.topic-actions,
+    div#page-body .pagination,
+    div#page-body .left-box,
+    div.postbody ul.profile-icons,
+    div.postbody img,
+    dl.postprofile,
+    div.post .right,
+    div.postbody div.signature {
+    	float: none;
+    	display: none !important;
+	}
+    div#page-body div.post .content { overflow: visible; }
+
+    /* Footer */
+    div.noprint { display: none; }
+}

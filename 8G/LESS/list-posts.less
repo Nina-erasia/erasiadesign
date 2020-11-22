@@ -1,0 +1,222 @@
+/*******************************************/
+/*              LIST OF POSTS              */
+/*******************************************/
+
+
+/***** VIEW TOPIC *****/
+/* Menu Plus */
+#plus_menu {
+    border: @panel-border;
+    .border-radius(@panel-border-radius);
+    background-color: @panel-background-color;
+    .title-overview {
+        background-color: @plus-menu-title-background-color;
+        color: @plus-menu-title-font-color;
+        .border-radius(@panel-border-radius @panel-border-radius 0px 0px);
+    }
+    .left-overview strong { font-weight: normal; }
+}
+
+/* Pagination */
+.pagination span {
+    a, a:link, a:visited, a:active {
+        background-color: @pagination-normal-background-color;
+        border: @pagination-normal-border;
+        color: @pagination-normal-font-color;
+        font-size: @very-small-font-size;
+	    font-weight: normal;
+		line-height: 1.5em;
+    }
+    
+    a:hover {
+		background-color: @pagination-hover-background-color;
+		border: @pagination-hover-border;
+		color: @pagination-hover-font-color;
+	}
+    
+    strong {
+        background-color: @pagination-selected-background-color;
+        border: @pagination-selected-border;
+        color: @pagination-selected-font-color;
+        font-size: @small-font-size;
+    }
+}
+
+/* Topic actions */
+.topic-actions { font-size: @normal-font-size; }
+
+
+/***** POST *****/
+
+/* Post */
+.post { 
+	background-color: @post-background-color;
+	border: @post-border;
+	.border-radius(@post-border-radius);
+}
+
+/* Postbody */
+.postbody {
+	color: @post-font-color;
+    line-height: @normal-line-height;
+	font-size: @normal-font-size;
+    
+    .topic-title, .h3 {
+	    font-size: @large-font-size;
+	    font-family: @post-title-font-family;
+		color: @post-title-font-color;
+	    font-weight: @post-title-font-weight;
+		line-height: 125%;
+    }
+    
+    p.author {
+		font-size: @small-font-size;
+		border-bottom: @post-inner-border;
+	}
+	
+    .content { font-size: @normal-font-size; }
+	.edited_message { font-size: @very-small-font-size; }
+}
+
+/* Profil sur les messages */
+.postprofile {
+	border-right: @post-inner-border;
+	
+	.label {
+		font-style: @post-profile-label-font-style;
+		text-decoration: @post-profile-label-text-decoration;
+		font-weight: @post-profile-label-font-weight;	
+	}
+	
+	dl {
+	    font-size: @normal-font-size;
+	    dt {
+	        font-family: @post-profile-pseudo-font-family;
+	        font-size: @post-profile-pseudo-font-size;
+	    }
+	    dd.profile-rank { border-bottom: @post-inner-border; }
+	    dd.profile-fields {
+	        font-size: @small-font-size;
+			line-height: @normal-line-height;
+			strong, a {
+				font-style: @post-profile-title-font-style;
+				text-decoration: @post-profile-title-text-decoration;
+				font-weight: @post-profile-title-font-weight;
+			}
+	    }
+		textarea {
+	        font-family: @normal-font-family;
+	        font-size: @small-font-size;
+		}
+	}
+}
+
+/* Online */
+.online { background-image: @post-online-background-image; }
+
+/* Sondage */
+fieldset.polls {
+    dl { 
+		border-bottom: @post-inner-border;
+		dt, dd { font-size: @normal-font-size; }
+	}
+}
+
+
+/***** PRIVATE MESSAGES *****/
+
+/* Profil sur les messages */
+dl.postprofile dt {
+    line-height: 24px;
+    font-family: @post-profile-pseudo-font-family;
+    font-size: @post-profile-pseudo-font-size;
+}
+
+
+/***** LIST OF POSTS SEARCH *****/
+.search.post .postbody {
+	h2.h3 { border-bottom: @post-inner-border; }
+}
+
+
+/***** ELEMENTS IN POST *****/
+
+/* Balises spoiler & code */
+dl.codebox {
+	background-color: #FFFFFF;
+	border: 1px solid #C9D2D8;
+	
+	color: @codebox-font-color;
+    font-size: @normal-font-size;
+    .border-radius(@codebox-border-radius);
+
+    dt {
+		font-weight: bold;
+        font-size: @very-small-font-size;
+		border-bottom: 1px solid #CCCCCC;
+    }
+    code {
+        font-size: @normal-font-size;
+		line-height: 1.3em;
+		color: #2E8B57;
+    }
+}
+
+/* Balise quote */
+blockquote {
+	background-image: @blockquote-background-image;
+	background-color: @blockquote-background-color;
+	border: @blockquote-border;
+    .border-radius(@blockquote-border-radius);
+	color: @blockquote-font-color;
+
+    blockquote {
+        background-color: @blockquote-blockquote-background-color;
+        border: @blockquote-blockquote-border;
+        color: @blockquote-blockquote-font-color;
+		blockquote {
+			background-color: @blockquote-background-color;
+			border: @blockquote-blockquote-border;
+	        color: @blockquote-blockquote-font-color;
+		}
+    }
+
+	cite {
+		font-style: normal;
+		font-weight: bold;
+		font-size: @very-small-font-size;
+		cite { font-size: @normal-font-size; }
+	}
+}
+
+/* Signature */
+.signature_div { font-size: @normal-font-size; }
+
+/* Boxes */
+div[class^="box-"] {
+    a { color: @box-link-font-color; }
+    a:hover { color: @box-link-hover-font-color; }
+}
+
+
+/***** NOT USED *****/
+
+/* Attachbox */
+.attachbox {	
+	background-color: @blockquote-background-color;
+	border: @blockquote-border;
+    .border-radius(@blockquote-border-radius);
+	color: @blockquote-font-color;
+    font-size: @normal-font-size;
+	
+	dt {
+		font-style: normal;
+		font-weight: bold;
+		font-size: @very-small-font-size;
+	}
+	
+	dd.attachments {
+		font-size: @small-font-size;		
+		dl.file { border-top: @blockquote-border; }
+	}
+}
